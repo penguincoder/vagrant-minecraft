@@ -1,0 +1,4 @@
+02  05  *   *   *       /etc/init.d/minecraft backup
+55  04  *   *   *       /etc/init.d/minecraft log-roll
+*/30    *   *   *   *   /etc/init.d/minecraft to-disk
+31  05  *   *   *       /etc/init.d/minecraft overviewer
