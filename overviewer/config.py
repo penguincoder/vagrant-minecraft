@@ -1,8 +1,7 @@
-outputdir = "/home/notch/mc-overviewer/render"
-texturepath = "/home/notch/mc-overviewer/1.8.jar"
+outputdir = "/map"
 rendermode = "smooth_lighting"
 world_name = "House Server"
-worlds[world_name] = "/home/notch/minecraft/world"
+worlds[world_name] = "/data/world"
 renders["North"] = {
 	'world': world_name,
 	'title': 'North',
