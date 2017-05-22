@@ -19,9 +19,5 @@ RUN mkdir -p /home/notch/.minecraft/versions/${MINECRAFT_VERSION} && \
 VOLUME /map
 VOLUME /data
 ADD config.py /
-
-USER root
-RUN echo "15,30,45,60 * * * * notch overviewer.py --config=/config.py >> /var/log/overviewer.log 2>&1" >> /etc/crontab && \
-    touch /var/log/overviewer.log && \
-    chown notch:users /var/log/overviewer.log
-CMD cron && tail -f /var/log/overviewer.log
+ADD run-overviewer.sh /
+CMD /run-overviewer.sh 15m

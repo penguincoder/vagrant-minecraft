@@ -20,12 +20,6 @@ docker run \
 cd $(dirname $0)/overviewer && \
   docker build -t overviewer . && \
   docker run \
-    --rm \
-    --volume ${MC_HOME}/minecraft:/data \
-    --volume ${MC_HOME}/overviewer:/map \
-    overviewer \
-    su - notch -c "overviewer.py --config=/config.py" && \
-  docker run \
     --detach \
     --restart always \
     --name overviewer \
