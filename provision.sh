@@ -9,7 +9,6 @@ docker run \
   --publish 25565:25565 \
   --env EULA=true \
   --env DIFFICULTY=normal \
-  --env OPS=penguincoder,cha0t1k \
   --env ALLOW_NETHER=true \
   --env ANNOUNCE_PLAYER_ACHIEVEMENTS=true \
   --env GENERATE_STRUCTURES=true \
