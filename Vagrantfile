@@ -14,5 +14,6 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
     p.cpus = CPUS
   end
   
+  config.vm.provision 'shell', run: 'once', inline: '/bin/sh -c "apk update && apk add make"'
   config.vm.provision 'shell', run: 'once', inline: '/vagrant/provision.sh'
 end
